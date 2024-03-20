@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3g7qt3f2i2c6"]
+
+[ext_resource type="Script" path="res://business_type_deck_container.gd" id="1_603y5"]
+
+[node name="Business Type Deck Container" type="Node2D"]
+script = ExtResource("1_603y5")
+
+[node name="CardPositioner" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardSlot1" type="TextureRect" parent="CardPositioner" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 2
+shortcut_context = NodePath("../..")
+stretch_mode = 5
+
+[node name="CardSlot2" type="TextureRect" parent="CardPositioner"]
+layout_mode = 2
+stretch_mode = 5
+
+[node name="CardSlot3" type="TextureRect" parent="CardPositioner"]
+layout_mode = 2
+stretch_mode = 5
+
+[node name="CardSlot4" type="TextureRect" parent="CardPositioner"]
+layout_mode = 2
+stretch_mode = 5
+
+[node name="CardSlotDeck" type="TextureRect" parent="CardPositioner"]
+layout_mode = 2
+stretch_mode = 5
+
+[connection signal="gui_input" from="CardPositioner/CardSlot1" to="." method="_on_card_slot_1_gui_input"]
+[connection signal="gui_input" from="CardPositioner/CardSlot2" to="." method="_on_card_slot_2_gui_input"]
+[connection signal="gui_input" from="CardPositioner/CardSlot3" to="." method="_on_card_slot_3_gui_input"]
+[connection signal="gui_input" from="CardPositioner/CardSlot4" to="." method="_on_card_slot_4_gui_input"]

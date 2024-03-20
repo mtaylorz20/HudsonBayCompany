@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://csbpeods6cplh"]
+
+[ext_resource type="Texture2D" uid="uid://dcyrjht6yacc2" path="res://Assets/Graphics/Backgrounds/Hudson Bay Map.png" id="1_l71am"]
+[ext_resource type="PackedScene" uid="uid://d3g7qt3f2i2c6" path="res://business_type_deck_container.tscn" id="2_cfah7"]
+
+[node name="Business Selection Scene" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(630, 307)
+scale = Vector2(2.2117, 2.03289)
+texture = ExtResource("1_l71am")
+
+[node name="Business Type Deck Container" parent="." instance=ExtResource("2_cfah7")]
