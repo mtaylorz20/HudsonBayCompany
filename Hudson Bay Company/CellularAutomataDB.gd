@@ -1,4 +1,5 @@
 extends Reference
+
 var cellular_automata_rules = [
 	{"name": "Rule 30", "rule": "11101110"},
 	{"name": "Rule 90", "rule": "01011010"},
